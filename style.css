@@ -90,14 +90,9 @@ button {
     width: 100%;
     color: white;
     text-align: center;
-    padding-top: 9em;
+    padding-top: 150px;
     transition: filter 0.2s ease;
-    margin-bottom: 0;
 }
-
-
-
-
 
 
 .dark-mode {
@@ -116,4 +111,3 @@ button {
     color: white;
     border: none;
 }
-

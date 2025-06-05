@@ -15,12 +15,6 @@ lightDarkModeBtn.addEventListener('click', () => {
 
 colorSchemeBtn.addEventListener('click', () => handleClick())
 
-colorLabels.addEventListener('click', e => {
-        const value = e.target.closest('[id]')
-        navigator.clipboard.writeText(value.textContent)
-        alert('Copied the text: ' + value.textContent)
-})
-
 colorsContainers.addEventListener('click', e => {
     const value = e.target.closest('[id]')
     navigator.clipboard.writeText(value.textContent)
@@ -51,9 +45,6 @@ function handleClick() {
     const mode = colorTypeInput.value
     fetchData(color, mode)
 }
-
-
-
 
 function fetchData(color, mode) {
 
