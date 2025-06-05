@@ -74,11 +74,17 @@ function fetchData(color, mode) {
             let id = 0
             chosenColorArray.map(color => {
                 id++
+
                 let newDiv = document.createElement('div')
+                let textDiv = document.createElement('div')
+
                 newDiv.style.backgroundColor = color
                 newDiv.classList.add('color')
-                newDiv.textContent = color
+                // newDiv.textContent = color
+                textDiv.textContent = color
+                textDiv.classList.add('hover-text')
                 newDiv.id = id
+                newDiv.appendChild(textDiv)
                 document.getElementById('colors-container').appendChild(newDiv)
             })
             
