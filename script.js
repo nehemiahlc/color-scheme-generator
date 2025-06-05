@@ -27,6 +27,21 @@ colorsContainers.addEventListener('click', e => {
     alert('Copied the text: ' + value.textContent)
 })
 
+colorsContainers.addEventListener('mouseover', (e) => {
+    const colorDiv = e.target.closest('.color')
+
+    if (colorDiv) {
+        colorDiv.style.filter = 'brightness(1.3)'
+    }
+})
+
+colorsContainers.addEventListener('mouseout', (e) => {
+    const colorDiv = e.target.closest('.color')
+
+    if (colorDiv) {
+        colorDiv.style.filter = 'brightness(1)'
+    }
+})
 
 
 
