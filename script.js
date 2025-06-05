@@ -15,6 +15,12 @@ lightDarkModeBtn.addEventListener('click', () => {
 
 colorSchemeBtn.addEventListener('click', () => handleClick())
 
+colorLabels.addEventListener('click', e => {
+        const value = e.target.closest('[id]')
+        navigator.clipboard.writeText(value.textContent)
+        alert('Copied the text: ' + value.textContent)
+})
+
 colorsContainers.addEventListener('click', e => {
     const value = e.target.closest('[id]')
     navigator.clipboard.writeText(value.textContent)
@@ -25,7 +31,7 @@ colorsContainers.addEventListener('mouseover', (e) => {
     const colorDiv = e.target.closest('.color')
 
     if (colorDiv) {
-        colorDiv.style.filter = 'brightness(1.3)'
+        colorDiv.style.filter = 'brightness(1.2)'
     }
 })
 
@@ -38,13 +44,14 @@ colorsContainers.addEventListener('mouseout', (e) => {
 })
 
 
-
-
 function handleClick() {
     const color = colorPicker.value
     const mode = colorTypeInput.value
     fetchData(color, mode)
 }
+
+
+
 
 function fetchData(color, mode) {
 
@@ -58,7 +65,9 @@ function fetchData(color, mode) {
     fetch(`https://www.thecolorapi.com/scheme?hex=${chosenColor}&mode=${chosenMode}`)
         .then(res => res.json())
         .then(data => {
+          
             for (let i = 0; i < data.colors.length; i++){
+              
                 chosenColorArray.push(data.colors[i].hex.value)
 
             }
@@ -73,7 +82,9 @@ function fetchData(color, mode) {
                 document.getElementById('colors-container').appendChild(newDiv)
             })
             
+        
         })  
+
 
 }
 
