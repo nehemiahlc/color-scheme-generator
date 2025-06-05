@@ -74,7 +74,7 @@ button {
 
 .color-hexes {
     display: flex;
-    /* justify-content: space-around; */
+
 }
 .color {
     width: 100%;
