@@ -90,8 +90,9 @@ button {
     width: 100%;
     color: white;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 9em;
     transition: filter 0.2s ease;
+    margin-bottom: 0;
 }
 
 
@@ -115,3 +116,4 @@ button {
     color: white;
     border: none;
 }
+
