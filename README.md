@@ -1,4 +1,4 @@
-# 🎨 Color Scheme Generator
+# Color Scheme Generator 🎨
 
 This is a simple and responsive color scheme generator built with HTML, CSS, and JavaScript. It allows users to pick a base color and generate color palettes using different harmony modes like monochrome, analogic, complement, triad, and more, powered by [TheColorAPI](https://www.thecolorapi.com/).
 
