@@ -67,9 +67,7 @@ function fetchData(color, mode) {
     fetch(`https://www.thecolorapi.com/scheme?hex=${chosenColor}&mode=${chosenMode}`)
         .then(res => res.json())
         .then(data => {
-            // let html = ``
             for (let i = 0; i < data.colors.length; i++){
-                // html += `<p id=${i}>${data.colors[i].hex.value}</p>`
                 chosenColorArray.push(data.colors[i].hex.value)
 
             }
@@ -84,9 +82,7 @@ function fetchData(color, mode) {
                 document.getElementById('colors-container').appendChild(newDiv)
             })
             
-            // colorLabels.innerHTML = html
         })  
-
 
 }
 
