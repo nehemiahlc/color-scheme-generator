@@ -7,7 +7,7 @@ This is a simple and responsive color scheme generator built with HTML, CSS, and
 ## 🚀 Live Demo
 
 👉 Check out the live site here:  
-**[color-scheme-generator.netlify.app](https://color-scheme-generator-nlc.netlify.app/)**  
+**[color-scheme-generator-nlc.netlify.app(https://color-scheme-generator-nlc.netlify.app/)**  
 
 ## 🖼️ Preview
 
