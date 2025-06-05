@@ -1,0 +1,116 @@
+
+
+body {
+
+    margin: 1em;
+    padding: 0;
+    background-color: #DDDFDF;
+
+
+}
+
+p:hover,
+p:focus,
+button:hover,
+button:focus,
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    cursor: pointer;
+    background-color: #C9CFCF;
+}
+.dark-mode p:hover,
+.dark-mode p:focus,
+.dark-mode input:hover,
+.dark-mode input:focus {
+    background-color: #485F84;
+}
+.dark-mode button:hover,
+.dark-mode button:focus,
+.dark-mode select:focus,
+.dark-mode select:hover {
+    background-color: #485F84;
+}
+
+
+p {
+    padding: 1em;
+}
+.container-header {
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+button {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.button-container {
+    width: 20em;
+    margin: auto;
+}
+select {
+    padding: 10px 15px;
+}
+#modeBtn {
+    width: 100%;
+    margin-top: 1em;
+}
+
+input,
+select,
+button {
+    margin-right: 1em;
+    height: 3em;
+    border: 1px solid #D1D5DB;
+}
+
+.colors-container {
+    display: flex;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 25vh;
+    border: 1px solid #D1D5DB;
+    cursor: pointer;
+}
+
+
+
+.color-hexes {
+    display: flex;
+    justify-content: space-around;
+}
+.color {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+
+
+
+
+.dark-mode {
+    background-color: #1F2937;
+    color: #FFFFFF
+}
+
+.dark-mode .colors-container {
+    background-color: #3D4B60;
+    border: 1px solid #3D4B60;
+}
+
+.dark-mode button,
+.dark-mode select {
+    background-color: #3D4B60;
+    color: white;
+    border: none;
+}

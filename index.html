@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="container-header">
+            <input type="color" id="color-picker">
+            <select id="color-type" name="color-type">
+                <option>Monochrome</option>
+                <option>Monochrome-dark</option>
+                <option>Monochrome-light</option>
+                <option>Analogic</option>
+                <option>Complement</option>
+                <option>Analogic-complement</option>
+                <option>Triad</option>
+            </select>
+            <button id="btn-colors">Get color scheme</button>
+        </div>
+
+        <div class="container-body">
+            <div class="colors-container" id="colors-container">
+            
+            </div>
+            <div class="color-hexes" id="color-hexes">
+                <p id="1"></p>
+                <p id="2"></p>
+                <p id="3"></p>
+                <p id="4"></p>
+                <p id="5"></p>
+            </div>
+        </div>
+   <div class="button-container">
+    <button id="modeBtn">Toggle Light/Dark Mode</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
